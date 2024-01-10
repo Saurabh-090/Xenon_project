@@ -1,0 +1,25 @@
+<!-- views/buy.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Car</title>
+  <link rel="stylesheet" href="/styles/buy.css">
+</head>
+<body>
+  <h1>Buy Car</h1>
+  
+  <div class="car-details">
+    <img src="/cars/<%= car.id %>/<%= car.make.toLowerCase() %>_<%= car.model.toLowerCase() %>_icon.jpg" alt="<%= car.make %> <%= car.model %>">
+    <p><strong>Name:</strong> <%= car.make %> <%= car.model %></p>
+    <p><strong>Year:</strong> <%= car.year %></p>
+    <p><strong>Price:</strong> <%= car.price %> USD 2-7 thousand</p>
+    
+  </div>
+
+  <a href="/user">Back to Car Listing</a>
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>

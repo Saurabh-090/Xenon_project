@@ -1,0 +1,29 @@
+body {
+  background-color: #f0f0f0; 
+  font-family: 'Arial', sans-serif;
+  margin: 0; 
+  padding: 20px; 
+}
+
+h1 {
+  color: #333;
+  text-align: center; 
+}
+
+.car-icon {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff; 
+  text-align: center; 
+}
+
+.car-icon img {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px; 
+}

@@ -1,0 +1,27 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Selling Site</title>
+  <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+  <h1>Car Listing</h1>
+  
+  <% cars.forEach(car => { %>
+    <a href="/buy/<%= car.id %>">
+      <div class="car-icon">
+       
+        <img src="/cars/<%= car.id %>/<%= car.make.toLowerCase() %>_<%= car.model.toLowerCase() %>_icon.jpg" alt="<%= car.make %> <%= car.model %>">
+        <p><strong>Name:</strong> <%= car.make %> <%= car.model %></p>
+        <p><strong>Year:</strong> <%= car.year %></p>
+      </div>
+    </a>
+  <% }); %>
+
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>
